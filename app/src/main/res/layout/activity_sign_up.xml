@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextBirthDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="16dp"
+        android:hint="Birth Date (YYYY-MM-DD)"
+        android:inputType="none" />
+
+    <Spinner
+        android:id="@+id/spinnerBirthPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextBirthDate"
+        android:layout_marginTop="16dp"
+        android:hint="Birth Place" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerBirthPlace"
+        android:layout_marginTop="24dp"
+        android:text="Sign Up" />
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/buttonSignUp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/no_image_white" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#2E2E2E"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Your Account:"
+        android:textColor="#AC9065"
+        android:textSize="25dp"
+        android:fontFamily="@font/dancing_script"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        />
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_below="@+id/textView"
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/default_profile_image"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- Bio -->
+        <TextView
+            android:id="@+id/countryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="country"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp" />
+        <TextView
+            android:id="@+id/birthTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="birth"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="modify account"
+                android:backgroundTint="#AC9065"
+                android:id="@+id/modify_button"
+                android:layout_marginEnd="4dp">
+            </Button>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:text="delete Account"
+                android:textColor="@color/white"
+                android:id="@+id/delete_button"
+                android:backgroundTint="#FF0000">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Logout"
+                android:textColor="@color/white"
+
+                android:id="@+id/logout_button"
+                android:backgroundTint="#AC9065">
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

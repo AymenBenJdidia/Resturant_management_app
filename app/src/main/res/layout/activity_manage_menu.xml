@@ -1,0 +1,73 @@
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Add Food Form -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Name" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:entries="@array/category_array"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+
+        >
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Food" />
+
+        <Button
+            android:id="@+id/buttonPickImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="launchImagePicker"
+            android:text="Pick Image" />
+
+        <ImageView
+            android:id="@+id/imageViewPreview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_image_white" /> <!-- Default image placeholder -->
+
+    </LinearLayout>
+
+
+    <!-- Food List -->
+    <ListView
+        android:id="@+id/listViewFoods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
