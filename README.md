@@ -97,7 +97,6 @@ Follow these steps to set up and run the app locally:
 2. **Open in Android Studio**:
 
 Import the project into Android Studio.
-Ensure the latest Android SDK is installed.
 
 3. **Build and run the app on an emulator or device**
 
