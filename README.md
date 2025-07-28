@@ -6,14 +6,13 @@ A robust Android application designed to streamline restaurant operations, offer
 ## Features
 
 ### Admin Panel
-- **Secure Admin Login**: Access the admin dashboard using "admin" credentials.
+- Access the admin dashboard using "admin" credentials.
 - **Menu Management**: Add, edit, or delete food items with details including:
   - Name
   - Description
   - Price
   - Image
 - **Real-Time Updates**: Menu changes are instantly reflected in the app.
-- **Element Management**: View and manage existing menu items, with options to delete items directly from the database.
 
 ### User Experience
 - **Account Management**: Register and sign in with personal credentials.
